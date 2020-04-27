@@ -6,3 +6,6 @@ There are about 100 flowers picture.
 This project is for practicing to draw amazing geometry diagrams with loop in Turtle lib of python.
 
 Dependency: Turtle lib of python
+
+01:
+<img src="./images/01.jpg"/>
