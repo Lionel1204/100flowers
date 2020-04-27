@@ -1,6 +1,4 @@
 # 20
-
-# 17
 from turtle import *
 
 

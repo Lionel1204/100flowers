@@ -7,6 +7,7 @@ def polygon(size, vertice):
     fd(size)
     right(360/vertice)
 
+
 def flower():
   # 01 draw sqare, side=4
   # 02 draw 14 vertices polygon, side=14
