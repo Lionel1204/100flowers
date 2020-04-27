@@ -7,8 +7,9 @@ This project is for practicing how to draw amazing geometry diagrams with loop.
   
 Dependency: Turtle lib of python  
   
-python source code: .\src  
-scratch source code: .\scratchsrc  
+python source code: .\src  (python 3.8.2)  
+
+scratch source code: .\scratchsrc  (scratch 3.6 and scratch 2)  
 
 01:  
 <img src="./images/01.jpg" height="200"/>  
