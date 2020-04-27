@@ -1,4 +1,4 @@
-# 25
+# 26
 
 from turtle import *
 
@@ -11,25 +11,16 @@ def parallelogram(side1, side2, angle):
     right(180 - angle)
 
 
-def petal():
-  left(30)
-  parallelogram(40, 40, 60)
-  fd(40)
-  right(60)
-  fd(40)
-  left(60)
-  parallelogram(60, 60, 60)
-  right(30)
-
-
 def flower():
-  times = 13
+  times = 12
   for i in range(times):
-    petal()
-    pu()
-    goto(0, 0)
-    pd()
-    right(360/13)
+    angle = 360/times
+    fd(70)
+    left(angle)
+    parallelogram(67, 67, 60)
+    right(angle)
+    fd(-50)
+    right(angle)
 
 
 def run():
