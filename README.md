@@ -8,4 +8,4 @@ This project is for practicing to draw amazing geometry diagrams with loop in Tu
 Dependency: Turtle lib of python
 
 01:
-<img src="./images/01.jpg" style="width=20%; height=20%"/>
+<img src="./images/01.jpg" style="width=100px; height=100px"/>
