@@ -30,4 +30,5 @@ def run():
   flower()
 
 run()
+hideturtle()
 done()

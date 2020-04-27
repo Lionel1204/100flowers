@@ -48,4 +48,5 @@ def run():
 
 
 run()
+hideturtle()
 done()
