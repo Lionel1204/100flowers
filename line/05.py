@@ -1,5 +1,6 @@
-# 04
+# 05
 from turtle import *
+
 
 def parallelogram(side1, side2, angle):
   for i in range(2):
@@ -7,6 +8,7 @@ def parallelogram(side1, side2, angle):
     right(angle)
     fd(side2)
     right(180-angle)
+
 
 def flower():
   times = 12

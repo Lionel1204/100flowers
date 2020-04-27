@@ -1,6 +1,7 @@
 # 04
 from turtle import *
 
+
 def polygon(size, vertice):
   for i in range(vertice):
     fd(size)
