@@ -1,11 +1,14 @@
 # 100flowers
 
-This project is an example for a book named <Scratch 编程之花>
+This project contains examples for a book named <Scratch编程之花> by 毛爱萍.  
 
-There are about 100 flowers picture.
-This project is for practicing to draw amazing geometry diagrams with loop in Turtle lib of python.
-
-Dependency: Turtle lib of python
+There are about 100 flowers pictures.  
+This project is for practicing how to draw amazing geometry diagrams with loop.  
+  
+Dependency: Turtle lib of python  
+  
+python source code: .\src  
+scratch source code: .\scratchsrc  
 
 01:  
 <img src="./images/01.jpg" height="200"/>  
