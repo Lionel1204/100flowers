@@ -97,3 +97,33 @@ Dependency: Turtle lib of python
 30:
 <img src="./images/30.jpg" height="200"/>  
 
+31:
+<img src="./images/31.jpg" height="200"/>  
+
+32:
+<img src="./images/32.jpg" height="200"/>  
+
+33:
+<img src="./images/33.jpg" height="200"/>  
+
+34:
+<img src="./images/34.jpg" height="200"/>  
+
+35:
+<img src="./images/35.jpg" height="200"/>  
+
+36:
+<img src="./images/36.jpg" height="200"/>  
+
+37:
+<img src="./images/37.jpg" height="200"/>  
+
+38:
+<img src="./images/38.jpg" height="200"/>  
+
+39:
+<img src="./images/39.jpg" height="200"/>  
+
+40:
+<img src="./images/40.jpg" height="200"/>  
+

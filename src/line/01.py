@@ -30,6 +30,6 @@ def run():
   flower()
 
 run()
-getscreen().getcanvas().postscript(file='../../images/01.eps')
+#getscreen().getcanvas().postscript(file='../../images/01.eps')
 hideturtle()
 done()
