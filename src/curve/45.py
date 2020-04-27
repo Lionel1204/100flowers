@@ -65,5 +65,4 @@ def run():
 
 run()
 hideturtle()
-getscreen().getcanvas().postscript(file='../../images/45.eps')
 done()
