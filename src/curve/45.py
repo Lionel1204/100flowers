@@ -1,4 +1,4 @@
-# 40
+# 45
 from turtle import *
 from math import *
 
@@ -22,34 +22,34 @@ def arc(radius, angle, direction='left'):
       left(perDegree)
 
 
-def leaf(radius, angle):
-  times = 2
-  for i in range(times):
-    arc(radius, angle, 'right')
-    right(180 - angle)
-
-
 def petal():
-  left(50)
-  radius = 95
+  radius = 120
+  while radius >= 100:
+    for i in range(2):
+      arc(radius, 90, 'right')
+      right(90)
+    radius -= 20
 
-  while radius >= 40:
-    leaf(radius, 100)
-    radius -= 50
 
-  right(50)
-
+def core():
+  right(45)
+  pu()
+  fd(30)
+  left(45)
+  pd()
+  for i in range(2):
+    arc(60, 90, 'right')
+    right(90)
+  pu()
+  goto(0, 0)
+  pd()
 
 
 def flower():
-  times = 12
+  times = 5
   for i in range(times):
-    pu()
-    fd(30)
-    pd()
     petal()
-    pu()
-    fd(-30)
+    core()
     right(360/times)
 
 
@@ -65,4 +65,5 @@ def run():
 
 run()
 hideturtle()
+getscreen().getcanvas().postscript(file='../../images/45.eps')
 done()

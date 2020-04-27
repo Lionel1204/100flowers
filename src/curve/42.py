@@ -1,4 +1,4 @@
-# 40
+# 42
 from turtle import *
 from math import *
 
@@ -22,34 +22,17 @@ def arc(radius, angle, direction='left'):
       left(perDegree)
 
 
-def leaf(radius, angle):
-  times = 2
+def curvedSquare():
+  for i in range(4):
+    arc(50, 90, 'right')
+    left(90)
+    arc(50, 90, 'left')
+
+
+def twiningFlower():
+  times = 10
   for i in range(times):
-    arc(radius, angle, 'right')
-    right(180 - angle)
-
-
-def petal():
-  left(50)
-  radius = 95
-
-  while radius >= 40:
-    leaf(radius, 100)
-    radius -= 50
-
-  right(50)
-
-
-
-def flower():
-  times = 12
-  for i in range(times):
-    pu()
-    fd(30)
-    pd()
-    petal()
-    pu()
-    fd(-30)
+    curvedSquare()
     right(360/times)
 
 
@@ -60,7 +43,7 @@ def run():
   pencolor('black')
   speed('fastest')
   pd()
-  flower()
+  twiningFlower()
 
 
 run()

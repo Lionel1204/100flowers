@@ -1,4 +1,4 @@
-# 40
+# 41
 from turtle import *
 from math import *
 
@@ -22,35 +22,48 @@ def arc(radius, angle, direction='left'):
       left(perDegree)
 
 
-def leaf(radius, angle):
-  times = 2
-  for i in range(times):
+def bird(radius, angle):
     arc(radius, angle, 'right')
-    right(180 - angle)
+    left(180)
+    arc(radius, angle, 'left')
+    left(180)
+    arc(radius, angle, 'left')
+    left(180)
+    arc(radius, angle, 'right')
+    left(180)
 
 
-def petal():
-  left(50)
-  radius = 95
-
-  while radius >= 40:
-    leaf(radius, 100)
-    radius -= 50
-
-  right(50)
-
-
-
-def flower():
-  times = 12
+def flowerInner():
+  times = 5
   for i in range(times):
     pu()
-    fd(30)
+    fd(25)
     pd()
-    petal()
+    bird(30, 110)
     pu()
-    fd(-30)
+    goto(0, 0)
     right(360/times)
+
+
+def flowerOuter():
+  times = 10
+  for i in range(times):
+    pu()
+    fd(65)
+    pd()
+    bird(70, 110)
+    pu()
+    goto(0, 0)
+    right(360/times)
+
+
+def heart():
+  pu()
+  goto(-22, 0)
+  pd()
+  arc(22, 360, 'right')
+  pu()
+  goto(0, 0)
 
 
 def run():
@@ -60,7 +73,9 @@ def run():
   pencolor('black')
   speed('fastest')
   pd()
-  flower()
+  heart()
+  flowerInner()
+  flowerOuter()
 
 
 run()
