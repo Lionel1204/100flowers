@@ -1,4 +1,4 @@
-# 08
+# 17
 from turtle import *
 
 def polygon(size, vertice):
@@ -7,18 +7,30 @@ def polygon(size, vertice):
     right(360/vertice)
 
 
-def flower1():
-  times = 5
-  for i in range(times):
-    polygon(50, 5)
-    right(360/times)
+def petal():
+  size = 47
+  pu()
+  fd(50)
+  pd()
+  left(30)
+  polygon(size, 3)
+  right(30)
+  pu()
+  fd(44)
+  pd()
+  left(30)
+  polygon(size * 2, 3)
+  right(30)
 
 
-def flower2():
-  times = 10
+def flower():
+  times = 12
   for i in range(times):
-    polygon(110, 5)
+    pu()
+    goto(0, 0)
+    petal()
     right(360/times)
+
 
 
 def run():
@@ -28,8 +40,7 @@ def run():
   pencolor('black')
   speed('fastest')
   pd()
-  flower1()
-  flower2()
+  flower()
 
 
 run()

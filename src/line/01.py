@@ -7,6 +7,17 @@ def polygon(size, vertice):
     fd(size)
     right(360/vertice)
 
+def flower():
+  # 01 draw sqare, side=4
+  # 02 draw 14 vertices polygon, side=14
+  # 03 draw triangle, side=3
+  # 19 draw 5 vertices polygon, side=5
+  side = 4
+  repeat = 10
+  for i in range(repeat):
+    polygon(500 / side, side)
+    right(360 / repeat)
+
 
 def run():
   seth(0)
@@ -15,18 +26,7 @@ def run():
   pencolor('black')
   speed('fastest')
   pd()
-  repeat = 10
-  for i in range(repeat):
-    # 01 draw sqare
-    polygon(500/4, 4)
-
-    # 02 draw 14 vertices polygon
-    #polygon(500/14, 14)
-
-    # 03 draw triangle
-    #polygon(500/3, 3)
-
-    right(360/repeat)
+  flower()
 
 run()
 done()

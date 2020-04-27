@@ -1,5 +1,6 @@
-# 08
+# 16
 from turtle import *
+
 
 def polygon(size, vertice):
   for i in range(vertice):
@@ -7,18 +8,34 @@ def polygon(size, vertice):
     right(360/vertice)
 
 
-def flower1():
-  times = 5
+def lace():
+  times = 20
   for i in range(times):
-    polygon(50, 5)
+    pu()
+    fd(147)
+    pd()
+    polygon(30, 3)
+    fd(30)
+    polygon(-30, 3)
+    fd(-30)
+    pu()
+    goto(0, 0)
     right(360/times)
+    pd()
 
 
-def flower2():
+def petal():
   times = 10
   for i in range(times):
-    polygon(110, 5)
+    fd(100)
+    polygon(50, 3)
+    fd(50)
+    polygon(-50, 3)
+    fd(-50)
+    pu()
+    goto(0, 0)
     right(360/times)
+    pd()
 
 
 def run():
@@ -28,8 +45,8 @@ def run():
   pencolor('black')
   speed('fastest')
   pd()
-  flower1()
-  flower2()
+  petal()
+  lace()
 
 
 run()
