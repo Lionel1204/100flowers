@@ -30,5 +30,8 @@ def run():
   flower()
 
 run()
+ts = getscreen()
+cav = ts.getcanvas()
+cav.postscript(file='test.eps')
 hideturtle()
 done()
