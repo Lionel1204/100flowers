@@ -7,123 +7,123 @@ This project is for practicing to draw amazing geometry diagrams with loop in Tu
 
 Dependency: Turtle lib of python
 
-01:
+01:  
 <img src="./images/01.jpg" height="200"/>  
 
-02:
+02:  
 <img src="./images/02.jpg" height="200"/>  
 
-03:
+03:  
 <img src="./images/03.jpg" height="200"/>  
 
-04:
+04:  
 <img src="./images/04.jpg" height="200"/>  
 
-05:
+05:  
 <img src="./images/05.jpg" height="200"/>  
 
-06:
+06:  
 <img src="./images/06.jpg" height="200"/>  
 
-07:
+07:  
 <img src="./images/07.jpg" height="200"/>  
 
-08:
+08:  
 <img src="./images/08.jpg" height="200"/>  
 
-09:
+09:  
 <img src="./images/09.jpg" height="200"/>  
 
-10:
+10:  
 <img src="./images/10.jpg" height="200"/>  
 
-11:
+11:  
 <img src="./images/11.jpg" height="200"/>  
 
-12:
+12:  
 <img src="./images/12.jpg" height="200"/>  
 
-13:
+13:  
 <img src="./images/13.jpg" height="200"/>  
 
-14:
+14:  
 <img src="./images/14.jpg" height="200"/>  
 
-15:
+15:  
 <img src="./images/15.jpg" height="200"/>  
 
-16:
+16:  
 <img src="./images/16.jpg" height="200"/>  
 
-17:
+17:  
 <img src="./images/17.jpg" height="200"/>  
 
-18:
+18:  
 <img src="./images/18.jpg" height="200"/>  
 
-19:
+19:  
 <img src="./images/19.jpg" height="200"/>  
 
-20:
+20:  
 <img src="./images/20.jpg" height="200"/>  
 
-21:
+21:  
 <img src="./images/21.jpg" height="200"/>  
 
-22:
+22:  
 <img src="./images/22.jpg" height="200"/>  
 
-23:
+23:  
 <img src="./images/23.jpg" height="200"/>  
 
-24:
+24:  
 <img src="./images/24.jpg" height="200"/>  
 
-25:
+25:  
 <img src="./images/25.jpg" height="200"/>  
 
-26:
+26:  
 <img src="./images/26.jpg" height="200"/>  
 
-27:
+27:  
 <img src="./images/27.jpg" height="200"/>  
 
-28:
+28:  
 <img src="./images/28.jpg" height="200"/>  
 
-29:
+29:  
 <img src="./images/29.jpg" height="200"/>  
 
-30:
+30:  
 <img src="./images/30.jpg" height="200"/>  
 
-31:
+31:  
 <img src="./images/31.jpg" height="200"/>  
 
-32:
+32:  
 <img src="./images/32.jpg" height="200"/>  
 
-33:
+33:  
 <img src="./images/33.jpg" height="200"/>  
 
-34:
+34:  
 <img src="./images/34.jpg" height="200"/>  
 
-35:
+35:  
 <img src="./images/35.jpg" height="200"/>  
 
-36:
+36:  
 <img src="./images/36.jpg" height="200"/>  
 
-37:
+37:  
 <img src="./images/37.jpg" height="200"/>  
 
-38:
+38:  
 <img src="./images/38.jpg" height="200"/>  
 
-39:
+39:  
 <img src="./images/39.jpg" height="200"/>  
 
-40:
+40:  
 <img src="./images/40.jpg" height="200"/>  
 
