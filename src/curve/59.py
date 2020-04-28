@@ -1,4 +1,4 @@
-# 50
+# 59
 from turtle import *
 from math import *
 
@@ -6,20 +6,13 @@ from math import *
 def arcPart(radius, direction='left'):
   # every 5 degrees
   perDegree = 5
-  if direction == 'right':
-    right(perDegree)
-  else:
-    left(perDegree)
+  right(perDegree) if direction == 'right' else left(perDegree)
 
   # sin(10) = 0.1736
   rad = radians(perDegree * 2)
   fd(sin(rad) * radius)
 
-  if direction == 'right':
-    right(perDegree)
-  else:
-    left(perDegree)
-
+  right(perDegree) if direction == 'right' else left(perDegree)
 
 
 def arc(radius, angle, direction='left'):
@@ -28,23 +21,27 @@ def arc(radius, angle, direction='left'):
     arcPart(radius, direction)
 
 
-def petal():
-  arc(40, 120, 'right')
-  arc(80, 60, 'left')
-  arc(30, 80, 'right')
-  left(140)
-  arc(85, 162, 'left')
-  right(160)
+def leaf(radius, angle, direction):
+  for i in range(2):
+    arc(radius, angle, direction)
+    right(180 - angle) if direction == 'right' else left(180 - angle)
+
+
+def leaves():
+  leaf(100, 110, 'right')
+  leaf(100, 110, 'left')
 
 
 def flower():
-  times = 12
+  times = 10
   for i in range(times):
-    petal()
+    pu()
+    fd(30)
+    pd()
+    leaves()
     pu()
     goto(0, 0)
-    right(360 / times)
-    pd()
+    right(360/times)
 
 
 def run():

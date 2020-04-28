@@ -25,13 +25,14 @@ def arc(radius, angle, direction='left'):
 
 def leaf():
   times = 2
+  angle = 90
   for i in range(times):
-    arc(70, 90, 'right')
-    right(90)
+    arc(70, angle, 'right')
+    right(180 - angle)
 
   for i in range(times):
-    arc(70, 90, 'left')
-    left(90)
+    arc(70, angle, 'left')
+    left(180 - angle)
 
 
 def flower():

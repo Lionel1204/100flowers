@@ -1,4 +1,4 @@
-# 50
+# 58
 from turtle import *
 from math import *
 
@@ -21,30 +21,23 @@ def arcPart(radius, direction='left'):
     left(perDegree)
 
 
-
 def arc(radius, angle, direction='left'):
   times = angle // 10
   for i in range(times):
     arcPart(radius, direction)
 
 
-def petal():
-  arc(40, 120, 'right')
-  arc(80, 60, 'left')
-  arc(30, 80, 'right')
-  left(140)
-  arc(85, 162, 'left')
-  right(160)
+def leaf(radius, angle):
+  for i in range(2):
+    arc(radius, angle, 'right')
+    right(180-angle)
 
 
 def flower():
-  times = 12
+  times = 20
   for i in range(times):
-    petal()
-    pu()
-    goto(0, 0)
-    right(360 / times)
-    pd()
+    leaf(100, 120)
+    right(360/times)
 
 
 def run():

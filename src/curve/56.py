@@ -1,4 +1,4 @@
-# 50
+# 56
 from turtle import *
 from math import *
 
@@ -28,23 +28,18 @@ def arc(radius, angle, direction='left'):
     arcPart(radius, direction)
 
 
-def petal():
-  arc(40, 120, 'right')
-  arc(80, 60, 'left')
-  arc(30, 80, 'right')
-  left(140)
-  arc(85, 162, 'left')
-  right(160)
-
-
 def flower():
   times = 12
   for i in range(times):
-    petal()
+    arc(90, 150, 'right')
+    right(90)
+    arc(65, 155, 'right')
+    right(90)
+    left(120)
     pu()
     goto(0, 0)
-    right(360 / times)
     pd()
+    right(360/times)
 
 
 def run():
@@ -59,4 +54,5 @@ def run():
 
 run()
 hideturtle()
+getscreen().getcanvas().postscript(file='../../images/56.eps')
 done()
