@@ -1,4 +1,4 @@
-# 60
+# 65
 from turtle import *
 from math import *
 
@@ -21,42 +21,24 @@ def arc(radius, angle, direction='left'):
     arcPart(radius, direction)
 
 
-def bird(radius, angle):
-  arc(radius, angle, 'right')
-  left(180)
-  arc(radius, angle, 'left')
-  left(180)
-  arc(radius, angle, 'left')
-  left(180)
-  arc(radius, angle, 'right')
-  left(180)
-
-
-def leaf(radius, angle, direction = 'left'):
+def leaf(radius, angle, direction='left'):
   for i in range(2):
     arc(radius, angle, direction)
     right(180 - angle) if direction == 'right' else left(180 - angle)
 
 
-def birds():
-  times = 7
+def flower():
+  times = 10
   for i in range(times):
-    pu()
-    fd(100)
-    pd()
-    bird(60, 90)
+    arc(40, 180, 'right')
+    arc(30, 200, 'left')
+    arc(20, 180, 'right')
+    leaf(63, 90, 'right')
+    left(160)
     pu()
     goto(0, 0)
+    pd()
     right(360/times)
-
-def flower():
-  times = 7
-  for i in range(times):
-    r = 210
-    while r >= 70:
-      leaf(r, 50, 'right')
-      r -= 50
-    right(360/7)
 
 
 def run():
@@ -67,7 +49,6 @@ def run():
   speed('fastest')
   pd()
   flower()
-  birds()
 
 
 run()

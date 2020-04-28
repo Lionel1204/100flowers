@@ -1,4 +1,4 @@
-# 60
+# 61
 from turtle import *
 from math import *
 
@@ -21,42 +21,19 @@ def arc(radius, angle, direction='left'):
     arcPart(radius, direction)
 
 
-def bird(radius, angle):
-  arc(radius, angle, 'right')
-  left(180)
-  arc(radius, angle, 'left')
-  left(180)
-  arc(radius, angle, 'left')
-  left(180)
-  arc(radius, angle, 'right')
-  left(180)
-
-
-def leaf(radius, angle, direction = 'left'):
-  for i in range(2):
-    arc(radius, angle, direction)
-    right(180 - angle) if direction == 'right' else left(180 - angle)
-
-
-def birds():
-  times = 7
+def flower():
+  times = 30
   for i in range(times):
-    pu()
-    fd(100)
-    pd()
-    bird(60, 90)
+    arc(40, 180, 'right')
+    arc(50, 180, 'left')
     pu()
     goto(0, 0)
+    pd()
     right(360/times)
-
-def flower():
-  times = 7
-  for i in range(times):
-    r = 210
-    while r >= 70:
-      leaf(r, 50, 'right')
-      r -= 50
-    right(360/7)
+  pu()
+  goto(-180, 0)
+  pd()
+  arc(180, 360, 'right')
 
 
 def run():
@@ -67,9 +44,9 @@ def run():
   speed('fastest')
   pd()
   flower()
-  birds()
 
 
 run()
 hideturtle()
+getscreen().getcanvas().postscript(file='../../images/61.eps')
 done()
