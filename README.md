@@ -1,6 +1,8 @@
 # 100flowers
 
 This project contains examples for a book named <Scratch编程之花> by 毛爱萍.  
+Cover
+<img src="./cover.jpg" height="400"/>  
 
 There are about 100 flowers pictures.  
 This project is for practicing how to draw amazing geometry diagrams with loop.  
