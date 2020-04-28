@@ -220,3 +220,33 @@ scratch source code: .\scratchsrc  (scratch 3.6 and scratch 2)
 
 70:  
 <img src="./images/70.jpg" height="200"/>  
+
+71:  
+<img src="./images/71.jpg" height="200"/>  
+
+72:  
+<img src="./images/72.jpg" height="200"/>  
+
+73:  
+<img src="./images/73.jpg" height="200"/>  
+
+74:  
+<img src="./images/74.jpg" height="200"/>  
+
+75:  
+<img src="./images/75.jpg" height="200"/>  
+
+76:  
+<img src="./images/76.jpg" height="200"/>  
+
+77:  
+<img src="./images/77.jpg" height="200"/>  
+
+78:  
+<img src="./images/78.jpg" height="200"/>  
+
+79:  
+<img src="./images/79.jpg" height="200"/>  
+
+80:  
+<img src="./images/80.jpg" height="200"/>  
