@@ -60,3 +60,13 @@ def bird(radius, angle):
   left(180)
   arc(radius, angle, 'right')
   left(180)
+
+
+def parachute(radius):
+  left(30)
+  fd(radius * 2)
+  right(30)
+  arc(radius, 180, 'right')
+  right(30)
+  fd(radius * 2)
+  right(150)
