@@ -1,4 +1,4 @@
-# 87
+# 93
 from turtle import *
 from src.utils import arc, polygon
 
@@ -15,16 +15,20 @@ def init():
 def flower():
   times = 8
   for i in range(times):
-    polygon(160, 3)
+    polygon(35, 12)
     right(360/times)
 
 
 def ring():
-  for r in [160, 180]:
+  times = 45
+  for i in range(times):
     pu()
-    goto(-r, 0)
+    fd(150)
     pd()
-    arc(r, 360, 'right')
+    arc(20, 360, 'right')
+    pu()
+    goto(0, 0)
+    right(360/times)
 
 
 def run():

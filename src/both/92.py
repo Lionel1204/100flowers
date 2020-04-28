@@ -1,6 +1,6 @@
-# 89
+# 92
 from turtle import *
-from src.utils import arc, parallelogram, leaf
+from src.utils import arc, leaf, parallelogram
 
 
 def init():
@@ -16,23 +16,17 @@ def flower():
   times = 12
   for i in range(times):
     parallelogram(40, 40, 30)
-    pu()
-
-    # half of diamond, goto diamond the opposite angles
+    # go to the oppsite angle
     fd(40)
     right(30)
     fd(40)
     left(30)
-    pd()
 
-    #draw a leaf
     left(180)
-    arc(30, 150, 'left')
-    right(150)
-    arc(30, 120, 'right')
-    leaf(50, 110, 'left')
-    left(120)
-
+    arc(50, 90, 'right')
+    fd(35)
+    leaf(45, 110, 'right')
+    left(90)
     pu()
     goto(0, 0)
     pd()

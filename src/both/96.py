@@ -1,6 +1,6 @@
-# 87
+# 96
 from turtle import *
-from src.utils import arc, polygon
+from src.utils import leaf, parachute
 
 
 def init():
@@ -12,25 +12,29 @@ def init():
   pd()
 
 
-def flower():
-  times = 8
-  for i in range(times):
-    polygon(160, 3)
-    right(360/times)
-
-
-def ring():
-  for r in [160, 180]:
+def leaves():
+  for r in range(40, 120, 40):
+    fd(20)
+    left(45)
+    leaf(r, 90, 'right')
     pu()
-    goto(-r, 0)
+    right(45)
+    goto(0, 0)
     pd()
-    arc(r, 360, 'right')
+
+
+def flower():
+  times = 6
+  for i in range(times):
+    leaves()
+    parachute(65)
+    right(360/times)
 
 
 def run():
   init()
   flower()
-  ring()
+  leaves()
 
 
 run()
