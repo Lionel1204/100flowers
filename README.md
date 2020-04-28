@@ -1,7 +1,7 @@
 # 100flowers
 
-This project contains examples for a book named <Scratch编程之花> by 毛爱萍.  
-Cover
+This project contains examples for a book named <Scratch编程之花> by 毛爱萍:  
+
 <img src="./cover.jpg" height="400"/>  
 
 There are about 100 flowers pictures.  
