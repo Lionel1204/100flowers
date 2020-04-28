@@ -1,6 +1,6 @@
 # 100
 from turtle import *
-from src.utils import leaf, polygon
+from src.utils import leaf
 
 
 def init():

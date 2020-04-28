@@ -45,7 +45,17 @@ def leaf(radius, angle, direction='left'):
     right(180 - angle) if direction == 'right' else left(180 - angle)
 
 
-def flowerPetal(radius, petalCount):
+# The vertex should be odd
+def asterisk(size, vertex):
+  if vertex % 2 == 0:
+    raise ValueError('Should input an odd number')
+
+  for i in range(vertex):
+    fd(size)
+    right(180 - 180 / vertex)
+
+
+def wintersweet(radius, petalCount):
   for i in range(petalCount):
     arc(radius, 180, 'right')
     left(180 - 360/petalCount)
@@ -70,3 +80,21 @@ def parachute(radius):
   right(30)
   fd(radius * 2)
   right(150)
+
+
+def circleWithCenter(x, y, radius):
+  pu()
+  angle = 0.0
+  while angle <= 2 * pi + 0.05:
+    goto(radius*cos(angle), radius*sin(angle))
+    pd()
+    angle += 0.05
+
+
+def ovalWithCenterAndPoint(x0, y0, x, y):
+  pu()
+  angle = 0.0
+  while angle <= 2 * pi + 0.05:
+    goto(x0 + x * cos(angle), y0 + y * sin(angle))
+    pd()
+    angle += 0.05

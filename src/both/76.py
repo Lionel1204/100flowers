@@ -1,6 +1,6 @@
 # 76
 from turtle import *
-from src.utils import flowerPetal, polygon
+from src.utils import wintersweet, polygon
 
 
 def init():
@@ -18,7 +18,7 @@ def flower2():
     pu()
     fd(160)
     pd()
-    flowerPetal(10, 5)
+    wintersweet(10, 5)
     pu()
     goto(0, 0)
     pd()
