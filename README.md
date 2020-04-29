@@ -11,7 +11,7 @@ Dependency: Turtle lib of python
   
 python source code: .\src  (python 3.8.2)  
 
-scratch source code: .\scratchsrc  (scratch 3.6 and scratch 2)  
+scratch source code: .\scratchsrc  (scratch 3.6)  
 
 01:  
 <img src="./images/01.jpg" height="200"/>  
