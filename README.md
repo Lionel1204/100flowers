@@ -8,6 +8,7 @@ There are 100 flowers pictures.
 This project is for practicing how to draw amazing geometry diagrams with loop.  
   
 Dependency: Turtle lib of python  
+PS: You can import utils as a lib to re-use some basic shapes
   
 python source code: .\src  (python 3.8.2)  
 

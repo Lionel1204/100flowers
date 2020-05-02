@@ -1,3 +1,5 @@
+# Some basic shapes.
+
 from turtle import *
 from math import *
 
